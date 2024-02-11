@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="js/gallery.js"></script>
+</head>
+
+<body onload="setImages('preview')">
+
+    <div id="image">
+        Hover over an image below to display here.
+    </div>
+
+    <div id="grid_preview">
+        <img class="preview" alt="Xúc xích" src="imgs/sausage.gif" onmouseover="upDate(this)" onmouseout="unDo()"
+            onfocus="upDate(this)" onblur="unDo()">
+
+        <img class="preview" alt="Mì tôm" src="imgs/noodle.gif" onmouseover="upDate(this)" onmouseout="unDo()"
+            onfocus="upDate(this)" onblur="unDo()">
+
+        <img class="preview" src="imgs/banana.gif" alt="Chuối" onmouseover="upDate(this)" onmouseout="unDo()"
+            onfocus="upDate(this)" onblur="unDo()">
+    </div>
+
+</body>
+
+</html>
